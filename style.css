@@ -1,0 +1,70 @@
+.logo {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+body {
+    background-image: linear-gradient(rgb(219, 220, 233), purple);
+    height: 100vh;
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Vertical layout */
+}
+
+.container {
+    max-width: 955px;
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 6px;
+    flex: 1; /* Allow the container to grow */
+    padding: 33px;
+    overflow-y: auto; /* Scroll if content overflows */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.message {
+    background-color: gray;
+    width: 24%;
+    padding: 10px;
+    margin: 17px 2px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+.send {
+    text-align: center;
+    max-width: 955px; /* Match the container */
+    margin: auto; /* Center the form */
+    padding: 10px; /* Add some padding */
+}
+
+#send-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items */
+}
+
+#messageInp {
+    width: 80%; /* Adjust width */
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 34px;
+}
+
+.btn {
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 34px;
+    margin-left: 10px; /* Space between input and button */
+}
